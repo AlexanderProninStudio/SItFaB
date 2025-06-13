@@ -27,12 +27,10 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         // Находим элементы по ID из activity_main.xml
-        tvOutput = findViewById(R.id.tvOutput)
-        val btnLoad = findViewById<Button>(R.id.btnLoad)
+            // напиши здесь свой код tvOutput = _____
+            // напиши здесь свой код val btnLoad = _____
         // Устанавливаем обработчик клика по кнопке "Загрузить"
-        btnLoad.setOnClickListener {
-            loadFruits()
-        }
+            // напиши здесь свой код btnLoad._____
     }
     private fun loadFruits() {
         /*
