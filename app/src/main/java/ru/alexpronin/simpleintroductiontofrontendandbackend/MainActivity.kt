@@ -16,6 +16,11 @@ import kotlin.concurrent.thread
 class MainActivity : AppCompatActivity() {
     private lateinit var tvOutput: TextView
     private val apiUrl = "https://helper.alexpronin.ru/api-fruits-simple.php" // ← можно заменить на свой сервер
+    /*
+    Если вы запускаете приложение в эмуляторе и хотите обратиться к локальному серверу на хост-машине, то 127.0.0.1 в эмуляторе указывает на сам эмулятор, а не на ваш компьютер. В этом случае используйте IP-адрес 10.0.2.2 — это специальный адрес, который эмулятор перенаправляет на хост-машину.
+    Использование HTTP (незащищённого трафика) небезопасно — данные могут быть перехвачены или изменены злоумышленниками. Рекомендуется использовать HTTPS, если это возможно.
+    (При использовании только HTTPS, рекомендую удалить android:usesCleartextTraffic="true" из файла AndroidManifest.xml)
+     */
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
